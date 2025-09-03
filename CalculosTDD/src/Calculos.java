@@ -59,7 +59,7 @@ return suma;
      * @return texto invertida
      */
     String invertir(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+        return new StringBuilder(texto).reverse().toString();
     }
 
 }
