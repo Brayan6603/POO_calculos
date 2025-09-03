@@ -37,7 +37,17 @@ return suma;
      * @return cantidad de vocales
      */
     int vocales(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+        if (texto == null) {
+        return 0;
+    }
+    int contador = 0;
+    String vocales = "aeiouAEIOU";
+    for (char c : texto.toCharArray()) {
+        if (vocales.indexOf(c) != -1) {
+            contador++;
+        }
+    }
+    return contador;
     }
 
     /**
